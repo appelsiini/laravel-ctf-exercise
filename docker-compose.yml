@@ -1,0 +1,22 @@
+version: '3.7'
+
+services:
+  app:
+    container_name: laracon-app
+    build:
+      context: .
+    ports:
+      - 1234:80
+    volumes:
+      - .:/app:cached
+
+  database:
+    image: mysql:5.7
+    container_name: laracon-database
+    ports:
+      - 33061:3306
+    environment:
+      - "MYSQL_USER=laracon"
+      - "MYSQL_PASSWORD=madrid123"
+      - "MYSQL_DATABASE=laracon_madrid"
+      - "MYSQL_ROOT_PASSWORD=password"
