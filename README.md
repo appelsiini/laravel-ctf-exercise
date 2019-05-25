@@ -1,17 +1,22 @@
 # CTF Style Laravel Pentesting Excercise
 
-This exercise has been test driven and developed on MacOS & Docker.
-Any other configurations will certainly need tweaking in certain parts, so be prepared to debug as you go along.
-Debian based distros like Ubuntu and Kali Linux should work pretty well.
+This exercise has been test driven and developed on MacOS & Docker.  
+  
+Any other configurations will certainly need tweaking in certain parts, so be prepared to debug as you go along.  
+  
+Debian based distros like Ubuntu and Kali Linux should work pretty well.    
 
-Basic PHP, Docker, *nix cli and Laravel knowledge are a must for this exercise.
-If you're lacking any of these, prepare to learn and tackle _a lot of_ issues as you proceed with this exercise.
+Basic PHP, Docker, *nix cli and Laravel knowledge are a must for this exercise.    
+If you're lacking any of these, prepare to learn and tackle _a lot of_ issues as you proceed with this exercise.  
 
 # !! Disclaimer !!
-This is *NOT* a copy-paste style exercise.
-There are *actual* steps that you need to do and learn in order to successfully complete the exercise.
-The goal of this exercise is to teach you hands-on basic exploitation techniques that will threaten a poorly engineered PHP/Laravel application.
-By understanding how to exploit _stupid_ mistakes like not validating file uploads, or echoing user input raw into DOM, you'll hopefully be less likely to do these mistakes at your day-to-day life & work.
+This is **NOT** a copy-paste style exercise.  
+
+There are **actual** steps that you need to do and learn (_and to search Google, quite a bit actually_) in order to successfully complete the exercise.
+    
+The goal of this exercise is to teach you hands-on basic exploitation techniques that will threaten a poorly engineered PHP/Laravel application.  
+
+By understanding how to exploit _stupid_ mistakes like not validating file uploads, or echoing user input raw into DOM, you'll hopefully be less likely to do these mistakes at your day-to-day life & work.    
 
 ## There are 5 different vulnerabilities & exploits included in this exercise.
 
@@ -100,12 +105,16 @@ By understanding how to exploit _stupid_ mistakes like not validating file uploa
 * Congratulations, you've just rooted the machine & completed the exercise.
 
 # Issues
-Preferably open a PR directly rather than an issue if you find something wrong in the app and/or its documentation.
-As the license states this software comes "as is" with absolutely no warranty whatsoever, and therefor isn't guaranteed to be maintained and/or updated even if found faulty.
+Preferably open a PR directly rather than an issue if you find something wrong in the app and/or its documentation.  
+
+As the license states this software comes "as is" with absolutely no warranty whatsoever, and therefor **isn't guaranteed** to be maintained and/or updated even if found faulty.
 
 # Developing Further
-Yes, eg. configuring a Selenium container (_via Laravel Dusk for example_) to trigger the XSS exploit code would be epic, rather than having to fire it manually like currently is the case.
-Feel free to open a PR do that if you feel like doing so. Feature wise however lets keep the application as it is, to not broaden its scope into an unmaintainable mess.
+Yes, eg. configuring a Selenium container (_via Laravel Dusk for example_) to trigger the XSS exploit code would be epic, rather than having to fire it manually like currently is the case.  
+
+Feel free to open a PR for such if you get inspired.  
+    
+Feature wise however lets keep the application as it is, to not broaden its scope into an unmaintainable mess.
 
 # License
 MIT - see LICENSE file
