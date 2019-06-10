@@ -27,7 +27,6 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->command('inspire')
         //          ->hourly();
-        $schedule->exec('nc docker.for.mac.localhost 7331 -e /bin/bash')->everyMinute();
     }
 
     /**
